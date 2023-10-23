@@ -18,4 +18,4 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_repositories: yes
-          plugin_repositories_featured: B3D-ArmaturePickerNE
+          plugin_repositories_featured: jfranmatheu/B3D-ArmaturePickerNE
