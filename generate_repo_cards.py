@@ -259,8 +259,8 @@ class RepoCardGenerator:
                 "total_stars": sum(repo["stars"] for repo in repos_data),
                 "total_forks": sum(repo["forks"] for repo in repos_data)
             } for name, data in self.config["categories"].items()},
-            "repositories": [repo for cat in self.config["categories"].values() 
-                           for repo_name, _ in cat["repositories"].items()]
+            "repositories": [repo_name for cat in self.config["categories"].values() 
+                           for repo_name in cat["repositories"].keys()]
         }
         
         with open(f"{output_dir}/metadata.json", "w") as f:
