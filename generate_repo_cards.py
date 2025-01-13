@@ -196,7 +196,7 @@ class RepoCardGenerator:
         os.makedirs(output_dir, exist_ok=True)
 
         # Start the grid container that will wrap everything
-        readme_content = '<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">\n\n'
+        readme_content = '<div id="repo-cards" align="center">\n\n'
         
         # Process each category
         for category_name, category_data in self.config["categories"].items():
@@ -239,7 +239,7 @@ class RepoCardGenerator:
                     f.write(svg_content)
                 
                 # Add to README with link wrapper
-                readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="width: 100%; max-width: 400px;"></a>\n\n'
+                readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="margin: 10px"></a>\n\n'
 
             # Add spacing between categories
             readme_content += '---\n\n'
