@@ -23,7 +23,8 @@ jobs:
       with:
         fetch-depth: 1
         # Use a personal access token for authentication
-        token: ${{ secrets.METRICS_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.repository }}
         
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -37,7 +38,7 @@ jobs:
         
     - name: Generate repository cards
       env:
-        GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}  # Use the same token here
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the same token here
         GITHUB_USERNAME: ${{ github.repository_owner }}
       run: python generate_repo_cards.py
         
