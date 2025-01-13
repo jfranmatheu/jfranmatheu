@@ -6,8 +6,6 @@
 
 # Featured Repositories
 
-# Featured Repositories
-
 <div id="repo-cards" align="center">
 
 <a href="https://github.com/jfranmatheu/Atelier-Sculpt" target="_blank"><img src="repo-cards/Atelier-Sculpt-card.svg" alt="Atelier-Sculpt" style="margin: 10px"></a>
