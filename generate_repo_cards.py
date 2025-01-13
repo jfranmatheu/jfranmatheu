@@ -210,8 +210,7 @@ class RepoCardGenerator:
         readme_content += "</div>"
         
         # Save README section
-        with open("REPO_CARDS.md", "w", encoding="utf-8") as f:
-            f.write(readme_content)
+        update_readme(readme_content)
         
         # Generate metadata file
         metadata = {
