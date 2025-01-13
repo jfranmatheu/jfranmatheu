@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-01-13T17:23:06.982609",
+  "last_updated": "2025-01-13T17:29:39.973676",
   "total_repositories": 9,
   "total_stars": 27,
   "total_forks": 1,
@@ -86,7 +86,7 @@
       "size": 1195,
       "showcase": true,
       "dev_state": "RELEASE",
-      "image": null,
+      "image": ".github/images/color-picker.png",
       "popularity_score": 1000
     },
     {
@@ -160,7 +160,7 @@
       "size": 37794,
       "showcase": false,
       "dev_state": "RELEASE",
-      "image": "https://assets.superhivemarket.com/store/product/160628/image/xlarge-6b51fcedae001bf3d825763083c185c8.png",
+      "image": ".github/images/sculpt-paint-wheel.jpg",
       "popularity_score": 11
     }
   ]
