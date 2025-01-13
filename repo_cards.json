@@ -1,12 +1,15 @@
 {
   "repositories": {
-    "Sculpt-Paint-Wheel": {
+    "example": {
       "description_override": null,
       "priority": 1,
-      "tags": ["stable", "texture paint", "sculpting", "blender", "user interface"],
+      "tags": [],
       "showcase": false,
       "custom_color": null,
       "image": null,
+      "dev_state": "RELEASE"
+    },
+    "Sculpt-Paint-Wheel": {
       "dev_state": "RELEASE"
     },
     "Color-Picker": {
