@@ -1,47 +1,69 @@
 {
-  "repositories": {
-    "example": {
-      "description_override": null,
-      "priority": 1,
-      "tags": [],
-      "showcase": false,
-      "custom_color": null,
-      "image": null,
-      "dev_state": "RELEASE"
+  "categories": {
+    "Blender Add-ons": {
+      "description": "Tools and utilities for Blender",
+      "repositories": {
+        "example": {
+          "description_override": null,
+          "priority": 1,
+          "tags": [],
+          "showcase": false,
+          "custom_color": null,
+          "image": null,
+          "dev_state": "RELEASE"
+        },
+        "Sculpt-Paint-Wheel": {
+          "dev_state": "RELEASE"
+        },
+        "Color-Picker": {
+          "dev_state": "RELEASE",
+          "image": null
+        },
+        "Atelier-Sculpt": {
+          "dev_state": "RELEASE"
+        },
+        "Atelier-Paint": {
+          "dev_state": "ALPHA"
+        },
+        "Blender-Web-Streaming": {
+          "dev_state": "BETA"
+        },
+        "Blender-Brush-Manager": {
+          "dev_state": "RELEASE"
+        }
+      }
     },
-    "Sculpt-Paint-Wheel": {
-      "dev_state": "RELEASE"
+    "Simulation & Physics": {
+      "description": "Simulation and physics utilities applied to Blender",
+      "repositories": {
+        "JFracture": {
+          "dev_state": "RELEASE"
+        },
+        "MolecuLab": {
+          "dev_state": "BETA"
+        },
+        "Simu-Cloth": {
+          "dev_state": "BETA"
+        },
+        "SimuSama": {
+          "dev_state": "ALPHA"
+        }
+      }
     },
-    "Color-Picker": {
-      "dev_state": "RELEASE",
-      "image": null
-    },
-    "SimuSama": {
-      "dev_state": "ALPHA"
-    },
-    "MolecuLab": {
-      "dev_state": "ALPHA"
-    },
-    "JFracture": {
-      "dev_state": "RELEASE"
-    },
-    "Blender-Web-Streaming": {
-      "dev_state": "BETA"
-    },
-    "Blender-Brush-Manager": {
-      "dev_state": "RELEASE"
-    },
-    "Atelier-Sculpt": {
-      "dev_state": "RELEASE"
-    },
-    "Atelier-Paint": {
-      "dev_state": "ALPHA"
+    "Standalone Applications": {
+      "description": "Independent software applications",
+      "repositories": {
+        "Blender-Hub": {
+          "dev_state": "BETA",
+          "image": null
+        }
+      }
     }
   },
   "settings": {
     "sort_by": "popularity",
     "sort_direction": "desc",
-    "max_cards": 10,
+    "max_cards": 12,
     "show_tags": true
   }
 }

@@ -36,30 +36,29 @@ class RepoCardGenerator:
         except FileNotFoundError:
             # Create default config file if it doesn't exist
             default_config = {
-                "repositories": {
-                    "awesome-project": {
-                        "description_override": None,
-                        "priority": 1,
-                        "tags": ["featured", "production"],
-                        "showcase": True,
-                        "custom_color": None
-                    },
-                    "cool-library": {
-                        "description_override": None,
-                        "priority": 2,
-                        "tags": ["library"],
-                        "showcase": True,
-                        "custom_color": None
+                "categories": {
+                    "Main Projects": {
+                        "description": "Primary repositories",
+                        "repositories": {
+                            "awesome-project": {
+                                "description_override": None,
+                                "priority": 1,
+                                "tags": ["featured", "production"],
+                                "showcase": True,
+                                "custom_color": None,
+                                "dev_state": "RELEASE"
+                            }
+                        }
                     }
                 },
                 "settings": {
-                    "sort_by": "stars",  # stars, priority, name
+                    "sort_by": "popularity",
                     "sort_direction": "desc",
                     "max_cards": 10,
                     "show_tags": True
                 }
             }
-            with open('repo_config.json', 'w') as f:
+            with open('repo_cards.json', 'w') as f:
                 json.dump(default_config, f, indent=2)
             return default_config
 
@@ -195,61 +194,73 @@ class RepoCardGenerator:
         
         # Create output directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
+
+        # Start the grid container that will wrap everything
+        readme_content = '<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">\n\n'
         
-        # Collect and sort repositories
-        repos_data = []
-        for repo in user.get_repos():
-            if repo.name in self.config["repositories"]:
-                repo_metadata = self.config["repositories"][repo.name]
-                repo_info = self.get_repo_info(repo, repo_metadata)
-                repos_data.append(repo_info)
+        # Process each category
+        for category_name, category_data in self.config["categories"].items():
+            # Add category header and description using markdown
+            readme_content += f'### {category_name}\n\n'
+            if category_data.get("description"):
+                readme_content += f'{category_data["description"]}\n\n'
+            
+            # Collect and sort repositories for this category
+            repos_data = []
+            for repo_name, repo_metadata in category_data["repositories"].items():
+                try:
+                    repo = user.get_repo(repo_name)
+                    repo_info = self.get_repo_info(repo, repo_metadata)
+                    repos_data.append(repo_info)
+                    print(f"{category_name} -> {repo_name}")
+                except Exception as e:
+                    print(f"Error processing {repo_name}: {e}")
+
+            # Sort repositories based on settings
+            sort_key = {
+                "stars": "stars",
+                "priority": "priority",
+                "name": "name",
+                "popularity": "popularity_score"
+            }.get(settings["sort_by"], "stars")
+
+            repos_data.sort(
+                key=itemgetter(sort_key),
+                reverse=(settings["sort_direction"] == "desc")
+            )
+
+            # Generate cards
+            for repo_info in repos_data:
+                svg_content = self.create_svg(repo_info)
                 
-                print(repo.name, " -> ", repo_info)
+                # Save SVG file
+                filename = f"{output_dir}/{repo_info['name']}-card.svg"
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write(svg_content)
+                
+                # Add to README with link wrapper
+                readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="width: 100%; max-width: 400px;"></a>\n\n'
 
-        # Sort repositories based on settings
-        sort_key = {
-            "stars": "stars",
-            "priority": "priority",
-            "name": "name",
-            "popularity": "popularity_score"
-        }.get(settings["sort_by"], "stars")
-
-        repos_data.sort(
-            key=itemgetter(sort_key),
-            reverse=(settings["sort_direction"] == "desc")
-        )
+            # Add spacing between categories
+            readme_content += '---\n\n'
         
-        # Limit number of cards if specified
-        if settings["max_cards"]:
-            repos_data = repos_data[:settings["max_cards"]]
+        # Close the main grid container
+        readme_content += '</div>\n\n'
         
-        # Generate README content
-        readme_content = "# Featured Repositories\n\n<div id=\"repo-cards\" align=\"center\">\n\n"
-
-        # Generate cards
-        for repo_info in repos_data:
-            svg_content = self.create_svg(repo_info)
-            
-            # Save SVG file
-            filename = f"{output_dir}/{repo_info['name']}-card.svg"
-            with open(filename, "w", encoding="utf-8") as f:
-                f.write(svg_content)
-            
-            # Add to README
-            readme_content += f'<img src="{filename}" alt="{repo_info["name"]}" style="margin: 10px">\n\n'
-        
-        readme_content += "</div>"
-        
-        # Save README section
+        # Update README
         self.update_readme(readme_content)
         
         # Generate metadata file
         metadata = {
             "last_updated": datetime.now().isoformat(),
-            "total_repositories": len(repos_data),
-            "total_stars": sum(repo["stars"] for repo in repos_data),
-            "total_forks": sum(repo["forks"] for repo in repos_data),
-            "repositories": repos_data
+            "total_repositories": sum(len(cat["repositories"]) for cat in self.config["categories"].values()),
+            "categories": {name: {
+                "count": len(data["repositories"]),
+                "total_stars": sum(repo["stars"] for repo in repos_data),
+                "total_forks": sum(repo["forks"] for repo in repos_data)
+            } for name, data in self.config["categories"].items()},
+            "repositories": [repo for cat in self.config["categories"].values() 
+                           for repo_name, _ in cat["repositories"].items()]
         }
         
         with open(f"{output_dir}/metadata.json", "w") as f:
