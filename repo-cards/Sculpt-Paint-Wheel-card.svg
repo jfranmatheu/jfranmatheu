@@ -47,7 +47,7 @@
                 <image
                     x="20" y="60"
                     width="360" height="240"
-                    href=".github/images/sculpt-paint-wheel.jpg"
+                    href="../.github/images/sculpt-paint-wheel.jpg"
                     preserveAspectRatio="xMidYMid slice"
                 />
             </g>
