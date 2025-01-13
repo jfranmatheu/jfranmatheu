@@ -142,7 +142,7 @@ class RepoCardGenerator:
             content = file.read()
 
         # Define the pattern to match the entire repo-cards div block
-        pattern = r'<div id=\'repo-cards\'.*?</div>\n*'
+        pattern = r"<div id=\"repo-cards\".*?</div>\n*"
         
         # Check if pattern exists
         if re.search(pattern, content, flags=re.DOTALL):
