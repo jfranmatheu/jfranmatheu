@@ -5,6 +5,7 @@ from datetime import datetime
 import json
 from typing import Dict, List
 from operator import itemgetter
+import re
 
 class RepoCardGenerator:
     def __init__(self, github_token):
@@ -135,6 +136,26 @@ class RepoCardGenerator:
         '''
         return svg_template.strip()
 
+    def update_readme(cards_content: str):
+        # Read the README.md file
+        with open('README.md', 'r', encoding='utf-8') as file:
+            content = file.read()
+
+        # Define the pattern to match the entire repo-cards div block
+        pattern = r'<div id=\'repo-cards\'.*?</div>\n*'
+        
+        # Check if pattern exists
+        if re.search(pattern, content, flags=re.DOTALL):
+            # Replace the matched content
+            new_content = re.sub(pattern, cards_content, content, flags=re.DOTALL)
+        else:
+            # Append to the end of the file
+            new_content = content.rstrip() + "\n\n" + cards_content + "\n"
+        
+        # Write the modified content back to the file
+        with open('README.md', 'w', encoding='utf-8') as file:
+            file.write(new_content)
+
     def generate_cards(self, username: str):
         """Generate SVG cards for repositories based on configuration"""
         user = self.github.get_user(username)
@@ -161,7 +182,7 @@ class RepoCardGenerator:
             "name": "name",
             "popularity": "popularity_score"
         }.get(settings["sort_by"], "stars")
-        
+
         repos_data.sort(
             key=itemgetter(sort_key),
             reverse=(settings["sort_direction"] == "desc")
@@ -172,8 +193,8 @@ class RepoCardGenerator:
             repos_data = repos_data[:settings["max_cards"]]
         
         # Generate README content
-        readme_content = "# Featured Repositories\n\n<div align=\"center\">\n\n"
-        
+        readme_content = "# Featured Repositories\n\n<div id=\"repo-cards\" align=\"center\">\n\n"
+
         # Generate cards
         for repo_info in repos_data:
             svg_content = self.create_svg(repo_info)

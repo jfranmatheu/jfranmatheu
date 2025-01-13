@@ -1,73 +1,73 @@
 {
-    "repositories": {
-      "Sculpt-Paint-Wheel": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "Color-Picker": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "SimuSama": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["alpha"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "MolecuLab": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "JFracture": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "Blender-Web-Streaming": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["beta"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "Blender-Brush-Manager": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "Atelier-Sculpt": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["stable"],
-        "showcase": true,
-        "custom_color": null
-      },
-      "Atelier-Paint": {
-        "description_override": null,
-        "priority": 1,
-        "tags": ["alpha"],
-        "showcase": true,
-        "custom_color": null
-      }
+  "repositories": {
+    "Sculpt-Paint-Wheel": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
     },
-    "settings": {
-      "sort_by": "popularity",
-      "sort_direction": "desc",
-      "max_cards": 10,
-      "show_tags": true
+    "Color-Picker": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "SimuSama": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["alpha"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "MolecuLab": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "JFracture": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "Blender-Web-Streaming": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["beta"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "Blender-Brush-Manager": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "Atelier-Sculpt": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["stable"],
+      "showcase": true,
+      "custom_color": null
+    },
+    "Atelier-Paint": {
+      "description_override": null,
+      "priority": 1,
+      "tags": ["alpha"],
+      "showcase": true,
+      "custom_color": null
     }
+  },
+  "settings": {
+    "sort_by": "popularity",
+    "sort_direction": "desc",
+    "max_cards": 10,
+    "show_tags": true
   }
+}
