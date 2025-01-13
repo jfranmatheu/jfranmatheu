@@ -10,7 +10,7 @@ on:
       - main           # Run when main branch is updated
     paths-ignore:      # Prevent infinite loops
       - 'repo-cards/**'
-      - 'REPO_CARDS.md'
+      - 'README.md'
 
 jobs:
   update-cards:
@@ -46,5 +46,5 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add repo-cards/ REPO_CARDS.md
+        git add repo-cards/ README.md
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update repository cards" && git push)
