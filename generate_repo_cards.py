@@ -117,12 +117,6 @@ class RepoCardGenerator:
 
         svg_template = f'''
         <svg width="400" height="{card_height}" viewBox="0 0 400 {card_height}" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <clipPath id="imageClip">
-                    <rect x="20" y="60" width="360" height="240" rx="5" />
-                </clipPath>
-            </defs>
-            
             <style>
                 .card {{ fill: var(--card-bg, {theme['light']['bg']}); }}
                 .card-stroke {{ stroke: var(--card-stroke, {theme['light']['stroke']}); }}
@@ -157,18 +151,12 @@ class RepoCardGenerator:
             
             <!-- Repository Image (if present) -->
             {f"""
-            <!-- Image background -->
-            <rect x="20" y="60" width="360" height="240" fill="#ffffff" rx="5"/>
-            
-            <!-- Actual image with clip path -->
-            <g clip-path="url(#imageClip)">
-                <image
-                    x="20" y="60"
-                    width="360" height="240"
-                    href="{repo_info['image']}"
-                    preserveAspectRatio="xMidYMid slice"
-                />
-            </g>
+            <image
+                x="20" y="60"
+                width="360" height="240"
+                href="{repo_info['image']}"
+                preserveAspectRatio="xMidYMid slice"
+            />
             """ if repo_info.get('image') else ""}
 
             <!-- Repository Description -->
@@ -248,7 +236,7 @@ class RepoCardGenerator:
             repos_data = repos_data[:settings["max_cards"]]
         
         # Generate README content
-        readme_content = "<div id=\"repo-cards\" align=\"center\">\n\n"
+        readme_content = "# Featured Repositories\n\n<div id=\"repo-cards\" align=\"center\">\n\n"
 
         # Generate cards
         for repo_info in repos_data:

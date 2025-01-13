@@ -6,12 +6,12 @@
       "tags": ["stable", "texture paint", "sculpting", "blender", "user interface"],
       "showcase": false,
       "custom_color": null,
-      "image": ".github/images/sculpt-paint-wheel.jpg",
+      "image": null,
       "dev_state": "RELEASE"
     },
     "Color-Picker": {
       "dev_state": "RELEASE",
-      "image": ".github/images/color-picker.png"
+      "image": null
     },
     "SimuSama": {
       "dev_state": "ALPHA"
