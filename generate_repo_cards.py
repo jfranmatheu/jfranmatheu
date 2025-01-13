@@ -116,7 +116,7 @@ class RepoCardGenerator:
         card_height = 140 + image_height
 
         svg_template = f'''
-        <svg width="400" height="{card_height}" viewBox="0 0 400 {card_height}" xmlns="http://www.w3.org/2000/svg">
+        <svg width="360" height="{card_height}" viewBox="0 0 360 {card_height}" xmlns="http://www.w3.org/2000/svg">
             <style>
                 .card {{ fill: var(--card-bg, {theme['light']['bg']}); }}
                 .card-stroke {{ stroke: var(--card-stroke, {theme['light']['stroke']}); }}
@@ -133,7 +133,7 @@ class RepoCardGenerator:
                 }}
             </style>
 
-            <rect x="0" y="0" rx="10" ry="10" width="400" height="{card_height}" 
+            <rect x="0" y="0" rx="10" ry="10" width="360" height="{card_height}" 
                 class="card card-stroke" stroke-width="1"/>
             
             <!-- Repository Icon -->
