@@ -1,4 +1,4 @@
-<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
             <style>
                 .card { fill: var(--card-bg, #ffffff); }
                 .card-stroke { stroke: var(--card-stroke, #e1e4e8); }
@@ -16,7 +16,7 @@
             </style>
 
             <a href="https://github.com/jfranmatheu/Sculpt-Paint-Wheel" target="_blank">
-                <rect x="0" y="0" rx="10" ry="10" width="400" height="140" 
+                <rect x="0" y="0" rx="10" ry="10" width="400" height="220" 
                     class="card card-stroke" stroke-width="1"/>
                 
                 <!-- Repository Icon -->
@@ -34,21 +34,28 @@
                 
                 <!-- Repository Image (if present) -->
                 
+                <image
+                    x="20" y="60"
+                    width="360" height="80"
+                    href="https://assets.superhivemarket.com/store/product/160628/image/xlarge-6b51fcedae001bf3d825763083c185c8.png"
+                    preserveAspectRatio="xMidYMid slice"
+                />
+                
 
                 <!-- Repository Description -->
-                <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" class="text">
+                <text x="20" y="160" font-family="Arial, sans-serif" font-size="14" class="text">
                     <tspan>No description available</tspan>
                     <tspan x="20" dy="18"></tspan>
                 </text>
                 
                 <!-- Language Info -->
-                <circle cx="20" cy="120" r="6" fill="#3572A5"/>
-                <text x="35" y="125" font-family="Arial, sans-serif" font-size="12" class="text-secondary">
+                <circle cx="20" cy="200" r="6" fill="#3572A5"/>
+                <text x="35" y="205" font-family="Arial, sans-serif" font-size="12" class="text-secondary">
                     Python
                 </text>
                 
                 <!-- Stats -->
-                <text x="320" y="125" font-family="Arial, sans-serif" font-size="12" class="text-secondary">
+                <text x="320" y="205" font-family="Arial, sans-serif" font-size="12" class="text-secondary">
                     ★ 4 🔀 1
                 </text>
             </a>
