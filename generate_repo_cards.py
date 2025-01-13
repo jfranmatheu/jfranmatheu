@@ -235,8 +235,10 @@ class RepoCardGenerator:
         if settings["max_cards"]:
             repos_data = repos_data[:settings["max_cards"]]
         
-        # Generate README content
-        readme_content = "# Featured Repositories\n\n<div id=\"repo-cards\" align=\"center\">\n\n"
+        # Generate README content with 2-column grid
+        readme_content = '''
+        <div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">
+'''
 
         # Generate cards
         for repo_info in repos_data:
@@ -247,8 +249,12 @@ class RepoCardGenerator:
             with open(filename, "w", encoding="utf-8") as f:
                 f.write(svg_content)
             
-            # Add to README
-            readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="margin: 10px"></a>\n\n'
+            # Add to README with grid item styling
+            readme_content += f'''
+<a href="{repo_info["url"]}" target="_blank">
+    <img src="{filename}" alt="{repo_info["name"]}" style="width: 100%; max-width: 400px;">
+</a>
+'''
 
         readme_content += "</div>"
 
