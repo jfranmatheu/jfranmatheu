@@ -236,7 +236,7 @@ class RepoCardGenerator:
             repos_data = repos_data[:settings["max_cards"]]
         
         # Generate README content
-        readme_content = '<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">'
+        readme_content = '<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">\n\n'
 
         # Generate cards
         for repo_info in repos_data:
