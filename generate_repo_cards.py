@@ -141,13 +141,13 @@ class RepoCardGenerator:
         with open('README.md', 'r', encoding='utf-8') as file:
             content = file.read()
 
-        # Define the pattern to match the entire repo-cards div block
-        pattern = r"<div id=\"repo-cards\".*?</div>\n*"
+        # Define the pattern to match only the repo-cards div block
+        pattern = r'<div id="repo-cards"[^>]*>\s*(?:\n|.)*?\n</div>\s*\n*'
         
         # Check if pattern exists
-        if re.search(pattern, content, flags=re.DOTALL):
+        if re.search(pattern, content, flags=re.MULTILINE):
             # Replace the matched content
-            new_content = re.sub(pattern, cards_content, content, flags=re.DOTALL)
+            new_content = re.sub(pattern, cards_content, content, flags=re.MULTILINE)
         else:
             # Append to the end of the file
             new_content = content.rstrip() + "\n\n" + cards_content + "\n"
