@@ -136,7 +136,7 @@ class RepoCardGenerator:
         '''
         return svg_template.strip()
 
-    def update_readme(cards_content: str):
+    def update_readme(self, cards_content: str):
         # Read the README.md file
         with open('README.md', 'r', encoding='utf-8') as file:
             content = file.read()
@@ -210,7 +210,7 @@ class RepoCardGenerator:
         readme_content += "</div>"
         
         # Save README section
-        update_readme(readme_content)
+        self.update_readme(readme_content)
         
         # Generate metadata file
         metadata = {
