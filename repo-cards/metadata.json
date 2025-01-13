@@ -1,10 +1,11 @@
 {
-  "last_updated": "2025-01-13T17:58:00.827374",
+  "last_updated": "2025-01-13T18:12:56.890344",
   "total_repositories": 9,
   "total_stars": 27,
   "total_forks": 1,
   "repositories": [
     {
+      "dev_state": "RELEASE",
       "name": "Atelier-Sculpt",
       "description": "A Blender addon that enhances Sculpt Mode",
       "url": "https://github.com/jfranmatheu/Atelier-Sculpt",
@@ -17,11 +18,10 @@
       "updated_at": "2024-01-12T06:16:54+00:00",
       "size": 1854,
       "showcase": true,
-      "dev_state": "RELEASE",
-      "image": null,
       "popularity_score": 1034
     },
     {
+      "dev_state": "RELEASE",
       "name": "Sculpt-Paint-Wheel",
       "description": "No description available",
       "url": "https://github.com/jfranmatheu/Sculpt-Paint-Wheel",
@@ -34,11 +34,10 @@
       "updated_at": "2024-11-20T14:47:15+00:00",
       "size": 37794,
       "showcase": true,
-      "dev_state": "RELEASE",
-      "image": null,
       "popularity_score": 1011
     },
     {
+      "dev_state": "RELEASE",
       "name": "Blender-Brush-Manager",
       "description": "Blender Brush Manager addon. Other addons may require this addon.",
       "url": "https://github.com/jfranmatheu/Blender-Brush-Manager",
@@ -51,11 +50,10 @@
       "updated_at": "2023-12-25T06:23:05+00:00",
       "size": 11172,
       "showcase": true,
-      "dev_state": "RELEASE",
-      "image": null,
       "popularity_score": 1010
     },
     {
+      "dev_state": "ALPHA",
       "name": "Atelier-Paint",
       "description": "A Blender addon that adds new Texture Paint tools",
       "url": "https://github.com/jfranmatheu/Atelier-Paint",
@@ -68,11 +66,10 @@
       "updated_at": "2024-07-10T10:25:49+00:00",
       "size": 602,
       "showcase": true,
-      "dev_state": "ALPHA",
-      "image": null,
       "popularity_score": 1002
     },
     {
+      "dev_state": "BETA",
       "name": "Blender-Web-Streaming",
       "description": "No description available",
       "url": "https://github.com/jfranmatheu/Blender-Web-Streaming",
@@ -85,11 +82,10 @@
       "updated_at": "2025-01-12T11:37:13+00:00",
       "size": 271,
       "showcase": true,
-      "dev_state": "BETA",
-      "image": null,
       "popularity_score": 1000
     },
     {
+      "dev_state": "RELEASE",
       "name": "Color-Picker",
       "description": "Blender color picker addon. Working for multiple modes: texture paint, vertex paint, Grease Pencil, weight paint...",
       "url": "https://github.com/jfranmatheu/Color-Picker",
@@ -102,11 +98,10 @@
       "updated_at": "2025-01-13T10:52:57+00:00",
       "size": 1195,
       "showcase": true,
-      "dev_state": "RELEASE",
-      "image": null,
       "popularity_score": 1000
     },
     {
+      "dev_state": "RELEASE",
       "name": "JFracture",
       "description": "No description available",
       "url": "https://github.com/jfranmatheu/JFracture",
@@ -119,11 +114,10 @@
       "updated_at": "2025-01-12T11:27:43+00:00",
       "size": 915,
       "showcase": true,
-      "dev_state": "RELEASE",
-      "image": null,
       "popularity_score": 1000
     },
     {
+      "dev_state": "ALPHA",
       "name": "MolecuLab",
       "description": "Simulates particles without the internal ParticleSystem simulation of Blender, powered by Cython",
       "url": "https://github.com/jfranmatheu/MolecuLab",
@@ -136,11 +130,10 @@
       "updated_at": "2023-11-17T09:19:23+00:00",
       "size": 14,
       "showcase": true,
-      "dev_state": "ALPHA",
-      "image": null,
       "popularity_score": 1000
     },
     {
+      "dev_state": "ALPHA",
       "name": "SimuSama",
       "description": "A simple MPM simulation engine for Blender, made with C++ and Python bindings to use as addon.",
       "url": "https://github.com/jfranmatheu/SimuSama",
@@ -153,8 +146,6 @@
       "updated_at": "2025-01-13T10:47:10+00:00",
       "size": 207,
       "showcase": true,
-      "dev_state": "ALPHA",
-      "image": null,
       "popularity_score": 1000
     }
   ]
