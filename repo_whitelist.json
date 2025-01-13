@@ -1,78 +1,73 @@
 {
-    "categories": {
-      "Blender Tools": {
-        "description": "Add-ons and tools for Blender",
-        "color": "#ff7f00",
-        "icon": "🎨",
-        "priority": 1
-      },
-      "Laboratory": {
-        "description": "Scientific visualization and simulation tools",
-        "color": "#3572A5",
-        "icon": "🧪",
-        "priority": 2
-      },
-      "Web Tools": {
-        "description": "Web-based applications and utilities",
-        "color": "#41b883",
-        "icon": "🌐",
-        "priority": 3
-      }
-    },
     "repositories": {
       "Sculpt-Paint-Wheel": {
-        "category": "Blender Tools",
+        "description_override": null,
         "priority": 1,
-        "tags": ["blender", "sculpting", "painting"],
-        "showcase": true
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "Color-Picker": {
-        "category": "Web Tools",
-        "priority": 2,
-        "tags": ["color", "utility"]
+        "description_override": null,
+        "priority": 1,
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "SimuSama": {
-        "category": "Laboratory",
+        "description_override": null,
         "priority": 1,
-        "tags": ["simulation"]
+        "tags": ["alpha"],
+        "showcase": true,
+        "custom_color": null
       },
       "MolecuLab": {
-        "category": "Laboratory",
-        "priority": 2,
-        "tags": ["molecular", "visualization"]
+        "description_override": null,
+        "priority": 1,
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "JFracture": {
-        "category": "Blender Tools",
-        "priority": 3,
-        "tags": ["blender", "fracture"]
+        "description_override": null,
+        "priority": 1,
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "Blender-Web-Streaming": {
-        "category": "Web Tools",
+        "description_override": null,
         "priority": 1,
-        "tags": ["blender", "streaming"]
+        "tags": ["beta"],
+        "showcase": true,
+        "custom_color": null
       },
       "Blender-Brush-Manager": {
-        "category": "Blender Tools",
-        "priority": 2,
-        "tags": ["blender", "brushes"]
+        "description_override": null,
+        "priority": 1,
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "Atelier-Sculpt": {
-        "category": "Blender Tools",
+        "description_override": null,
         "priority": 1,
-        "tags": ["blender", "sculpting"]
+        "tags": ["stable"],
+        "showcase": true,
+        "custom_color": null
       },
       "Atelier-Paint": {
-        "category": "Blender Tools",
+        "description_override": null,
         "priority": 1,
-        "tags": ["blender", "painting"]
+        "tags": ["alpha"],
+        "showcase": true,
+        "custom_color": null
       }
     },
     "settings": {
-      "sort_by": "priority",
+      "sort_by": "popularity",
       "sort_direction": "desc",
-      "max_cards_per_category": 10,
-      "show_tags": true,
-      "show_category_descriptions": true,
-      "layout": "grid"
+      "max_cards": 10,
+      "show_tags": true
     }
-}
+  }
