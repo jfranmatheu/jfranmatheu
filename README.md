@@ -6,7 +6,7 @@
 
 # Featured Repositories
 
-<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">
+<div id="repo-cards" align="center" style="columns: 2; gap: 10px; padding: 10px;">
 
 <a href="https://github.com/jfranmatheu/Atelier-Sculpt" target="_blank"><img src="repo-cards/Atelier-Sculpt-card.svg" alt="Atelier-Sculpt" style="width: 100%; max-width: 400px;"></a>
 
