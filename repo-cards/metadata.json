@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-01-13T17:38:51.329475",
+  "last_updated": "2025-01-13T17:45:08.191983",
   "total_repositories": 9,
   "total_stars": 27,
   "total_forks": 1,
@@ -20,6 +20,23 @@
       "dev_state": "RELEASE",
       "image": null,
       "popularity_score": 1034
+    },
+    {
+      "name": "Sculpt-Paint-Wheel",
+      "description": "No description available",
+      "url": "https://github.com/jfranmatheu/Sculpt-Paint-Wheel",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 4,
+      "forks": 1,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2024-11-20T14:47:15+00:00",
+      "size": 37794,
+      "showcase": true,
+      "dev_state": "RELEASE",
+      "image": null,
+      "popularity_score": 1011
     },
     {
       "name": "Blender-Brush-Manager",
@@ -139,29 +156,6 @@
       "dev_state": "ALPHA",
       "image": null,
       "popularity_score": 1000
-    },
-    {
-      "name": "Sculpt-Paint-Wheel",
-      "description": "No description available",
-      "url": "https://github.com/jfranmatheu/Sculpt-Paint-Wheel",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 4,
-      "forks": 1,
-      "priority": 1,
-      "tags": [
-        "stable",
-        "texture paint",
-        "sculpting",
-        "blender",
-        "user interface"
-      ],
-      "updated_at": "2024-11-20T14:47:15+00:00",
-      "size": 37794,
-      "showcase": false,
-      "dev_state": "RELEASE",
-      "image": null,
-      "popularity_score": 11
     }
   ]
 }
