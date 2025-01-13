@@ -1,4 +1,10 @@
 <svg width="400" height="380" viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <clipPath id="imageClip">
+                    <rect x="20" y="60" width="360" height="240" rx="5" />
+                </clipPath>
+            </defs>
+            
             <style>
                 .card { fill: var(--card-bg, #ffffff); }
                 .card-stroke { stroke: var(--card-stroke, #e1e4e8); }
@@ -33,12 +39,18 @@
             
             <!-- Repository Image (if present) -->
             
-            <image
-                x="20" y="60"
-                width="360" height="240"
-                href="https://assets.superhivemarket.com/store/product/160628/image/xlarge-6b51fcedae001bf3d825763083c185c8.png"
-                preserveAspectRatio="xMidYMid slice"
-            />
+            <!-- Image background -->
+            <rect x="20" y="60" width="360" height="240" fill="#ffffff" rx="5"/>
+            
+            <!-- Actual image with clip path -->
+            <g clip-path="url(#imageClip)">
+                <image
+                    x="20" y="60"
+                    width="360" height="240"
+                    href="https://assets.superhivemarket.com/store/product/160628/image/xlarge-6b51fcedae001bf3d825763083c185c8.png"
+                    preserveAspectRatio="xMidYMid slice"
+                />
+            </g>
             
 
             <!-- Repository Description -->
