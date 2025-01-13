@@ -116,7 +116,7 @@ class RepoCardGenerator:
         card_height = 140 + image_height
 
         svg_template = f'''
-        <svg width="350" height="{card_height}" viewBox="0 0 350 {card_height}" xmlns="http://www.w3.org/2000/svg">
+        <svg width="400" height="{card_height}" viewBox="0 0 400 {card_height}" xmlns="http://www.w3.org/2000/svg">
             <style>
                 .card {{ fill: var(--card-bg, {theme['light']['bg']}); }}
                 .card-stroke {{ stroke: var(--card-stroke, {theme['light']['stroke']}); }}
@@ -133,7 +133,7 @@ class RepoCardGenerator:
                 }}
             </style>
 
-            <rect x="0" y="0" rx="10" ry="10" width="350" height="{card_height}" 
+            <rect x="0" y="0" rx="10" ry="10" width="400" height="{card_height}" 
                 class="card card-stroke" stroke-width="1"/>
             
             <!-- Repository Icon -->
@@ -153,7 +153,7 @@ class RepoCardGenerator:
             {f"""
             <image
                 x="20" y="60"
-                width="350" height="240"
+                width="360" height="240"
                 href="{repo_info['image']}"
                 preserveAspectRatio="xMidYMid slice"
             />
@@ -236,7 +236,7 @@ class RepoCardGenerator:
             repos_data = repos_data[:settings["max_cards"]]
         
         # Generate README content
-        readme_content = "# Featured Repositories\n\n<div id=\"repo-cards\" align=\"center\">\n\n"
+        readme_content = '<div id="repo-cards" align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px;">'
 
         # Generate cards
         for repo_info in repos_data:
@@ -248,7 +248,7 @@ class RepoCardGenerator:
                 f.write(svg_content)
             
             # Add to README
-            readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="margin: 10px"></a>\n\n'
+            readme_content += f'<a href="{repo_info["url"]}" target="_blank"><img src="{filename}" alt="{repo_info["name"]}" style="width: 100%; max-width: 400px;"></a>\n\n'
 
         readme_content += "</div>"
 
