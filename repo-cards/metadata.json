@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-01-13T17:29:39.973676",
+  "last_updated": "2025-01-13T17:38:51.329475",
   "total_repositories": 9,
   "total_stars": 27,
   "total_forks": 1,
@@ -86,7 +86,7 @@
       "size": 1195,
       "showcase": true,
       "dev_state": "RELEASE",
-      "image": ".github/images/color-picker.png",
+      "image": null,
       "popularity_score": 1000
     },
     {
@@ -160,7 +160,7 @@
       "size": 37794,
       "showcase": false,
       "dev_state": "RELEASE",
-      "image": ".github/images/sculpt-paint-wheel.jpg",
+      "image": null,
       "popularity_score": 11
     }
   ]
