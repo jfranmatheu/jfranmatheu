@@ -15,7 +15,7 @@
                 }
             </style>
 
-            <a href="https://github.com/jfranmatheu/MolecuLab" target="_blank">
+            <a href="https://github.com/jfranmatheu/Blender-Hub" target="_blank">
                 <rect x="0" y="0" rx="10" ry="10" width="400" height="140" 
                     class="card card-stroke" stroke-width="1"/>
                 
@@ -26,7 +26,7 @@
                 
                 <!-- Repository Name and Dev State -->
                 <text x="60" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="600" class="text-link">
-                    MolecuLab
+                    Blender-Hub
                     <tspan x="350" text-anchor="end" font-size="12" class="text-secondary">
                         BETA
                     </tspan>
@@ -34,8 +34,8 @@
                 
                 <!-- Repository Description -->
                 <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" class="text">
-                    <tspan>Simulates particles without the internal ParticleS</tspan>
-                    <tspan x="20" dy="18">ystem simulation of Blender, powered by Cython</tspan>
+                    <tspan>A PyQt5 app to manage Blender projects.</tspan>
+                    <tspan x="20" dy="18"></tspan>
                 </text>
                 
                 <!-- Language Info -->
@@ -46,7 +46,7 @@
                 
                 <!-- Stats -->
                 <text x="320" y="125" font-family="Arial, sans-serif" font-size="12" class="text-secondary">
-                    ★ 0 🔀 0
+                    ★ 2 🔀 0
                 </text>
             </a>
         </svg>
