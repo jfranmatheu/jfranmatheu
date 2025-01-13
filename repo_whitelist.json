@@ -1,0 +1,78 @@
+{
+    "categories": {
+      "Blender Tools": {
+        "description": "Add-ons and tools for Blender",
+        "color": "#ff7f00",
+        "icon": "🎨",
+        "priority": 1
+      },
+      "Laboratory": {
+        "description": "Scientific visualization and simulation tools",
+        "color": "#3572A5",
+        "icon": "🧪",
+        "priority": 2
+      },
+      "Web Tools": {
+        "description": "Web-based applications and utilities",
+        "color": "#41b883",
+        "icon": "🌐",
+        "priority": 3
+      }
+    },
+    "repositories": {
+      "Sculpt-Paint-Wheel": {
+        "category": "Blender Tools",
+        "priority": 1,
+        "tags": ["blender", "sculpting", "painting"],
+        "showcase": true
+      },
+      "Color-Picker": {
+        "category": "Web Tools",
+        "priority": 2,
+        "tags": ["color", "utility"]
+      },
+      "SimuSama": {
+        "category": "Laboratory",
+        "priority": 1,
+        "tags": ["simulation"]
+      },
+      "MolecuLab": {
+        "category": "Laboratory",
+        "priority": 2,
+        "tags": ["molecular", "visualization"]
+      },
+      "JFracture": {
+        "category": "Blender Tools",
+        "priority": 3,
+        "tags": ["blender", "fracture"]
+      },
+      "Blender-Web-Streaming": {
+        "category": "Web Tools",
+        "priority": 1,
+        "tags": ["blender", "streaming"]
+      },
+      "Blender-Brush-Manager": {
+        "category": "Blender Tools",
+        "priority": 2,
+        "tags": ["blender", "brushes"]
+      },
+      "Atelier-Sculpt": {
+        "category": "Blender Tools",
+        "priority": 1,
+        "tags": ["blender", "sculpting"]
+      },
+      "Atelier-Paint": {
+        "category": "Blender Tools",
+        "priority": 1,
+        "tags": ["blender", "painting"]
+      }
+    },
+    "settings": {
+      "sort_by": "priority",
+      "sort_direction": "desc",
+      "max_cards_per_category": 10,
+      "show_tags": true,
+      "show_category_descriptions": true,
+      "layout": "grid"
+    }
+}

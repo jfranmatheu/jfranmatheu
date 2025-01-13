@@ -1,0 +1,45 @@
+name: Update Repository Cards
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  repository_dispatch:  # Allow manual trigger
+  workflow_dispatch:    # Allow manual trigger from GitHub UI
+  push:
+    branches:
+      - main           # Run when main branch is updated
+    paths-ignore:      # Prevent infinite loops
+      - 'repo-cards/**'
+      - 'REPO_CARDS.md'
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+        
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PyGithub requests
+        
+    - name: Generate repository cards
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USERNAME: ${{ github.repository_owner }}
+      run: python generate_repo_cards.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add repo-cards/ REPO_CARDS.md
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update repository cards" && git push)
