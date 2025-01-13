@@ -146,12 +146,17 @@ class RepoCardGenerator:
         
         # Collect and sort repositories
         repos_data = []
-        for repo in user.get_repos():
+        user_repos = user.get_repos()
+        print("USER REPOS:", list(user_repos.keys()))
+        print("WHITELISTED REPOS:", self.config["repositories"])
+        for repo in user_repos:
             if repo.name in self.config["repositories"]:
                 repo_metadata = self.config["repositories"][repo.name]
                 repo_info = self.get_repo_info(repo, repo_metadata)
                 repos_data.append(repo_info)
-        
+                
+                print(repo.name, " -> ", repo_info)
+
         # Sort repositories based on settings
         sort_key = {
             "stars": "stars",
