@@ -3,65 +3,35 @@
     "Sculpt-Paint-Wheel": {
       "description_override": null,
       "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "tags": ["stable", "texture paint", "sculpting", "blender", "user interface"],
+      "showcase": false,
+      "custom_color": null,
+      "image": null,
+      "dev_state": "RELEASE"
     },
     "Color-Picker": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "RELEASE"
     },
     "SimuSama": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["alpha"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "ALPHA"
     },
     "MolecuLab": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "ALPHA"
     },
     "JFracture": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "RELEASE"
     },
     "Blender-Web-Streaming": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["beta"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "BETA"
     },
     "Blender-Brush-Manager": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "RELEASE"
     },
     "Atelier-Sculpt": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["stable"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "RELEASE"
     },
     "Atelier-Paint": {
-      "description_override": null,
-      "priority": 1,
-      "tags": ["alpha"],
-      "showcase": true,
-      "custom_color": null
+      "dev_state": "ALPHA"
     }
   },
   "settings": {
