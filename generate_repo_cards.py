@@ -147,7 +147,7 @@ class RepoCardGenerator:
         # Collect and sort repositories
         repos_data = []
         user_repos = user.get_repos()
-        print("USER REPOS:", user_repos.keys)
+        print("USER REPOS:", user_repos)
         print("WHITELISTED REPOS:", self.config["repositories"])
         for repo in user_repos:
             if repo.name in self.config["repositories"]:
