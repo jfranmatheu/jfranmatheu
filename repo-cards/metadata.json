@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-01-13T16:45:48.883023",
+  "last_updated": "2025-01-13T17:04:26.083840",
   "total_repositories": 9,
   "total_stars": 27,
   "total_forks": 1,
@@ -12,14 +12,133 @@
       "language_color": "#3572A5",
       "stars": 17,
       "forks": 0,
-      "priority": 1,
-      "tags": [
-        "stable"
-      ],
+      "priority": 999,
+      "tags": [],
       "updated_at": "2024-01-12T06:16:54+00:00",
       "size": 1854,
       "showcase": true,
+      "dev_state": "RELEASE",
+      "image": null,
       "popularity_score": 1034
+    },
+    {
+      "name": "Blender-Brush-Manager",
+      "description": "Blender Brush Manager addon. Other addons may require this addon.",
+      "url": "https://github.com/jfranmatheu/Blender-Brush-Manager",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 5,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2023-12-25T06:23:05+00:00",
+      "size": 11172,
+      "showcase": true,
+      "dev_state": "RELEASE",
+      "image": null,
+      "popularity_score": 1010
+    },
+    {
+      "name": "Atelier-Paint",
+      "description": "A Blender addon that adds new Texture Paint tools",
+      "url": "https://github.com/jfranmatheu/Atelier-Paint",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 1,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2024-07-10T10:25:49+00:00",
+      "size": 602,
+      "showcase": true,
+      "dev_state": "ALPHA",
+      "image": null,
+      "popularity_score": 1002
+    },
+    {
+      "name": "Blender-Web-Streaming",
+      "description": "No description available",
+      "url": "https://github.com/jfranmatheu/Blender-Web-Streaming",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2025-01-12T11:37:13+00:00",
+      "size": 271,
+      "showcase": true,
+      "dev_state": "BETA",
+      "image": null,
+      "popularity_score": 1000
+    },
+    {
+      "name": "Color-Picker",
+      "description": "Blender color picker addon. Working for multiple modes: texture paint, vertex paint, Grease Pencil, weight paint...",
+      "url": "https://github.com/jfranmatheu/Color-Picker",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2025-01-13T10:52:57+00:00",
+      "size": 1195,
+      "showcase": true,
+      "dev_state": "RELEASE",
+      "image": null,
+      "popularity_score": 1000
+    },
+    {
+      "name": "JFracture",
+      "description": "No description available",
+      "url": "https://github.com/jfranmatheu/JFracture",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2025-01-12T11:27:43+00:00",
+      "size": 915,
+      "showcase": true,
+      "dev_state": "RELEASE",
+      "image": null,
+      "popularity_score": 1000
+    },
+    {
+      "name": "MolecuLab",
+      "description": "Simulates particles without the internal ParticleSystem simulation of Blender, powered by Cython",
+      "url": "https://github.com/jfranmatheu/MolecuLab",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2023-11-17T09:19:23+00:00",
+      "size": 14,
+      "showcase": true,
+      "dev_state": "ALPHA",
+      "image": null,
+      "popularity_score": 1000
+    },
+    {
+      "name": "SimuSama",
+      "description": "A simple MPM simulation engine for Blender, made with C++ and Python bindings to use as addon.",
+      "url": "https://github.com/jfranmatheu/SimuSama",
+      "language": "C++",
+      "language_color": "#f34b7d",
+      "stars": 0,
+      "forks": 0,
+      "priority": 999,
+      "tags": [],
+      "updated_at": "2025-01-13T10:47:10+00:00",
+      "size": 207,
+      "showcase": true,
+      "dev_state": "ALPHA",
+      "image": null,
+      "popularity_score": 1000
     },
     {
       "name": "Sculpt-Paint-Wheel",
@@ -31,131 +150,18 @@
       "forks": 1,
       "priority": 1,
       "tags": [
-        "stable"
+        "stable",
+        "texture paint",
+        "sculpting",
+        "blender",
+        "user interface"
       ],
       "updated_at": "2024-11-20T14:47:15+00:00",
       "size": 37794,
-      "showcase": true,
-      "popularity_score": 1011
-    },
-    {
-      "name": "Blender-Brush-Manager",
-      "description": "Blender Brush Manager addon. Other addons may require this addon.",
-      "url": "https://github.com/jfranmatheu/Blender-Brush-Manager",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 5,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "stable"
-      ],
-      "updated_at": "2023-12-25T06:23:05+00:00",
-      "size": 11172,
-      "showcase": true,
-      "popularity_score": 1010
-    },
-    {
-      "name": "Atelier-Paint",
-      "description": "A Blender addon that adds new Texture Paint tools",
-      "url": "https://github.com/jfranmatheu/Atelier-Paint",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 1,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "alpha"
-      ],
-      "updated_at": "2024-07-10T10:25:49+00:00",
-      "size": 602,
-      "showcase": true,
-      "popularity_score": 1002
-    },
-    {
-      "name": "Blender-Web-Streaming",
-      "description": "No description available",
-      "url": "https://github.com/jfranmatheu/Blender-Web-Streaming",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 0,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "beta"
-      ],
-      "updated_at": "2025-01-12T11:37:13+00:00",
-      "size": 271,
-      "showcase": true,
-      "popularity_score": 1000
-    },
-    {
-      "name": "Color-Picker",
-      "description": "Blender color picker addon. Working for multiple modes: texture paint, vertex paint, Grease Pencil, weight paint...",
-      "url": "https://github.com/jfranmatheu/Color-Picker",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 0,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "stable"
-      ],
-      "updated_at": "2025-01-13T10:52:57+00:00",
-      "size": 1195,
-      "showcase": true,
-      "popularity_score": 1000
-    },
-    {
-      "name": "JFracture",
-      "description": "No description available",
-      "url": "https://github.com/jfranmatheu/JFracture",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 0,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "stable"
-      ],
-      "updated_at": "2025-01-12T11:27:43+00:00",
-      "size": 915,
-      "showcase": true,
-      "popularity_score": 1000
-    },
-    {
-      "name": "MolecuLab",
-      "description": "Simulates particles without the internal ParticleSystem simulation of Blender, powered by Cython",
-      "url": "https://github.com/jfranmatheu/MolecuLab",
-      "language": "Python",
-      "language_color": "#3572A5",
-      "stars": 0,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "stable"
-      ],
-      "updated_at": "2023-11-17T09:19:23+00:00",
-      "size": 14,
-      "showcase": true,
-      "popularity_score": 1000
-    },
-    {
-      "name": "SimuSama",
-      "description": "A simple MPM simulation engine for Blender, made with C++ and Python bindings to use as addon.",
-      "url": "https://github.com/jfranmatheu/SimuSama",
-      "language": "C++",
-      "language_color": "#f34b7d",
-      "stars": 0,
-      "forks": 0,
-      "priority": 1,
-      "tags": [
-        "alpha"
-      ],
-      "updated_at": "2025-01-13T10:47:10+00:00",
-      "size": 207,
-      "showcase": true,
-      "popularity_score": 1000
+      "showcase": false,
+      "dev_state": "RELEASE",
+      "image": null,
+      "popularity_score": 11
     }
   ]
 }
