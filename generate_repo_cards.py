@@ -26,11 +26,11 @@ class RepoCardGenerator:
         
         # Load whitelist and metadata from config file
         self.config = self.load_config()
-        
+
     def load_config(self) -> Dict:
         """Load configuration from config file"""
         try:
-            with open('repo_config.json', 'r') as f:
+            with open('repo_cards.json', 'r') as f:
                 return json.load(f)
         except FileNotFoundError:
             # Create default config file if it doesn't exist
@@ -146,10 +146,7 @@ class RepoCardGenerator:
         
         # Collect and sort repositories
         repos_data = []
-        user_repos = user.get_repos()
-        print("USER REPOS:", user_repos)
-        print("WHITELISTED REPOS:", self.config["repositories"])
-        for repo in user_repos:
+        for repo in user.get_repos():
             if repo.name in self.config["repositories"]:
                 repo_metadata = self.config["repositories"][repo.name]
                 repo_info = self.get_repo_info(repo, repo_metadata)
