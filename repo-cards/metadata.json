@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-04-11T01:49:04.720726",
-  "total_repositories": 12,
+  "last_updated": "2025-04-11T15:55:10.242318",
+  "total_repositories": 13,
   "categories": {
     "Blender Add-ons": {
-      "count": 7,
+      "count": 8,
       "total_stars": 2,
       "total_forks": 0
     },
@@ -22,6 +22,7 @@
     "example",
     "Sculpt-Paint-Wheel",
     "Color-Picker",
+    "Blender-ACK",
     "Atelier-Sculpt",
     "Atelier-Paint",
     "Blender-Web-Streaming",
