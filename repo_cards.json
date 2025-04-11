@@ -19,6 +19,10 @@
           "dev_state": "RELEASE",
           "image": null
         },
+        "Blender-ACK": {
+          "dev_state": "BETA",
+          "image": null
+        },
         "Atelier-Sculpt": {
           "dev_state": "RELEASE"
         },
