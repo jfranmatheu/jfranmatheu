@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-12-21T02:08:36.852846",
-  "total_repositories": 13,
+  "last_updated": "2025-12-21T17:05:43.309344",
+  "total_repositories": 14,
   "categories": {
     "Blender Add-ons": {
       "count": 8,
@@ -13,7 +13,7 @@
       "total_forks": 0
     },
     "Standalone Applications": {
-      "count": 1,
+      "count": 2,
       "total_stars": 2,
       "total_forks": 0
     }
@@ -31,6 +31,7 @@
     "MolecuLab",
     "Simu-Cloth",
     "SimuSama",
-    "Blender-Hub"
+    "Blender-Hub",
+    "EverydayFODMAP"
   ]
 }
