@@ -60,6 +60,10 @@
         "Blender-Hub": {
           "dev_state": "BETA",
           "image": null
+        },
+        "EverydayFODMAP" : {
+          "dev_state": "ALPHA",
+          "image": null
         }
       }
     }
