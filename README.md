@@ -43,6 +43,7 @@ Simulation and physics utilities applied to Blender
 Independent software applications
 
 <a href="https://github.com/jfranmatheu/Blender-Hub" target="_blank"><img src="repo-cards/Blender-Hub-card.svg" alt="Blender-Hub" style="margin: 10px"></a>
+<a href="https://github.com/jfranmatheu/EverydayFODMAP" target="_blank"><img src="repo-cards/EverydayFODMAP-card.svg" alt="EverydayFODMAP" style="margin: 10px"></a>
 
 ---
 
